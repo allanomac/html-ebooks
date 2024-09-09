@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+body {
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+
+}
+
+.main{
+    flex: 1;
+    gap: 10px
+    ;
+    
+}
+
+.box1{
+   float: left;
+    width: 25%;
+    height: 700px;
+    background-color: #f7f9fa;
+    padding: 50px;
+    margin-left: 15%;
+   
+}
+
+
+.box2{
+    display: inline-block;
+    width: 25%;
+   
+    background-color: #e4e8eb;
+    padding: 50px;
+   
+   
+   
+}
+
+@media (max-width: 680px){
+
+    h1 {
+    font-size: 2.5rem;
+    
+    }
+
+   
+
+    .box1 {
+        width: 80%;
+        margin-bottom: 30px;
+        text-align: inline;
+        display: block;
+        margin-left: 0;
+
+        
+    }
+    .box2{
+       
+        display: none;
+       
+
+
+    }
+}
+
+
+
+</style>
+</head>
+<body>
+
+    
+
+
+    <div class="main">
+        <div>
+        <div class="box1">
+            <h1>Checkout</h1>
+            <div>
+                <script src="https://www.paypal.com/sdk/js?client-id=BAABx21W2AU3OB2Je30XUQNzv_5yZnE2JkkX2wjXAw2vYfT6V6GHG97b9T16b5s7MepUDIBzO1J4FEr0aE&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+                <div id="paypal-container-9E8P82C4ALV68"></div>
+                <script>
+                  paypal.HostedButtons({
+                    hostedButtonId: "9E8P82C4ALV68",
+                  }).render("#paypal-container-9E8P82C4ALV68")
+                </script>
+
+            </div>
+ 
+        </div>
+
+        <div class="box2">
+            <h1>Summary</h1>
+            <h2>Order Details</h2>
+            <p>The Laws of Human Nature</p>
+            <p>Total 2 USD</p>
+        </div>
+
+       </div>
+    </div>
+
+
+</body>
+</html>
